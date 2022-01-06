@@ -1,0 +1,41 @@
+{
+	"author": {
+		"email": "david.sabine@live.com",
+		"name": "David Sabine",
+		"url": "https://davidsabine.ca/"
+	},	
+	"bugs" : "https://github.com/DavidSabine/floating-camera/issues",
+	"dependencies": {
+		"source-map-support": "0.5.16"
+	},
+	"description": "Display your webcam over presentations and apps. Ideal for Zoom and Teams meetings.",
+	"devDependencies": {
+		"electron": "8.2.0",
+		"electron-builder": "22.4.1",
+		"electron-webpack": "2.8.2",
+		"webpack": "4.42.1"
+	},
+	"funding": [
+		{
+			"type" : "individual",
+			"url" : "https://paypal.me/DavidSabine"
+		}
+	],
+	"homepage": "https://github.com/DavidSabine/floating-camera",
+	"license": "BEER-WARE",
+	"name": "floating-camera",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DavidSabine/floating-camera.git"
+	},
+	"scripts": {
+		"compile": "electron-webpack",
+		"dev": "electron-webpack dev",
+		"dist": "yarn compile && electron-builder",
+		"dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+		"start": "electron ."
+	},
+	"version": "1.0.0"
+}
+
