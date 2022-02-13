@@ -23,7 +23,7 @@ app.on('window-all-closed', () => {
 })
 
 function createMainWindow() {
-	const windowSize = 300
+	const windowSize = 280
   const window = new BrowserWindow({
 		width: 1.5 * windowSize,
 		height: 1 * windowSize,

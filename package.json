@@ -1,10 +1,32 @@
 {
+	"appx": {
+		"applicationId": "Floating Camera",
+		"backgroundColor": "#43464B",
+		"displayName": "Floating Camera",
+		"identityName": "Floating Camera",
+		"publisher": "CN=117F4A39-20B8-4D31-BA05-29685AAA9105",
+		"publisherDisplayName": "David Sabine",
+		"showNameOnTiles": false
+	},
 	"author": {
 		"email": "david.sabine@live.com",
 		"name": "David Sabine",
 		"url": "https://davidsabine.ca/"
 	},	
 	"bugs" : "https://github.com/DavidSabine/floating-camera/issues",
+	"build": {
+		"appId": "com.electron.floating-camera",
+		"productName": "Floating Camera",
+		"linux": {
+			"target": "AppImage"
+		},
+		"mac": {
+			"target": "dmg"
+		},
+		"win": {
+			"target": "portable"
+		}
+	},
 	"dependencies": {
 		"source-map-support": "0.5.16"
 	},
@@ -36,6 +58,5 @@
 		"dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
 		"start": "electron ."
 	},
-	"version": "1.0.0"
+	"version": "1.0.1"
 }
-
